@@ -33,9 +33,12 @@ To load a `.pyc` file and dump the code object with disassembly:
 Bugs
 ----
 
-- `TYPE_LONG`, `TYPE_FLOAT`, and `TYPE_COMPLEX` are currently unsupported.  (Note that the latter two are only used in the old-style format)
+- `TYPE_LONG` is currently unsupported.
 
 Todo
 ----
 
 - Add support for outputting in marshal format.
+- Add RDoc documentation.
+- Add real unit tests.
+- Test `TYPE_FLOAT` and `TYPE_COMPLEX`.
