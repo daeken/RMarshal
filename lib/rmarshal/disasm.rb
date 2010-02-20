@@ -1,4 +1,4 @@
-require 'opcodes'
+require 'rmarshal/opcodes'
 
 class Disasm
 	def initialize(code, consts, varnames, names)

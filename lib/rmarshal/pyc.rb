@@ -1,4 +1,4 @@
-require 'unmarshal'
+require 'rmarshal'
 
 def pyc(fn)
 	fp = File.open fn

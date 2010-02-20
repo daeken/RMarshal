@@ -1,4 +1,4 @@
-require 'disasm'
+require 'rmarshal/disasm'
 require 'set'
 
 class Code
