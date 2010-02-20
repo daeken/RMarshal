@@ -57,6 +57,7 @@ class Unmarshal
 						cellvars, filename, name, firstlineno, lnotab
 					)
 			
+			when 'f' then @fp.read(byte).to_f
 			when 'g' then double
 			when 'i' then long
 			when 'I' then @fp.read(8).unpack('q')[0]
@@ -75,6 +76,8 @@ class Unmarshal
 			
 			when 'u' then @fp.read(long).force_encoding 'utf-8'
 			
+			when 'x'
+				Complex @fp.read(byte).to_f(), @fp.read(byte).to_f()
 			when 'y'
 				Complex double, double
 			
